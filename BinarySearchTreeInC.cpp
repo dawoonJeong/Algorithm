@@ -118,8 +118,8 @@ TreeNode *search(TreeNode *node, int key){
 
 void preorder(TreeNode *root){
 	if (root){
+		printf("%d ", root->key);
 		preorder(root->left);
-		printf("%d ", root->key);		
 		preorder(root->right);
 	}
 }
